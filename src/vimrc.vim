@@ -1,4 +1,3 @@
-" ======================================================
 " Author:        Shaedil D.
 
 " Maintainer:    Shaedil D.
@@ -8,8 +7,6 @@
 " Description:   My personal .vimrc used for TUI and GUI Vim/NVim
 
 " Last Modified: 04/07/22
-
-" ======================================================
 
 " VIM PLUGINS SECTION
 " ================
@@ -37,7 +34,7 @@ Plug 't9md/vim-textmanip'
 " manual labor of creating and updating tag files in your project directory
 " automatically. You will need ctags installed. I got mine from sourceforge.
 Plug 'ludovicchabant/vim-gutentags'
-" autopairs is self explanatory, they are useful in order to prevent those
+" Autopairs is self explanatory, they are useful in order to prevent those
 " moments where you are working with javascript or lisp and you forget an
 " ending parenthesis.
 Plug 'jiangmiao/auto-pairs'
@@ -47,7 +44,7 @@ Plug 'jiangmiao/auto-pairs'
 " linting features such as in-line linting errors, and built in parsers for
 " linting scripts is well thought of.
 Plug 'dense-analysis/ale'
-" vim git integration. It allows you to add, commit and push from within vim.
+" Vim git integration. It allows you to add, commit and push from within vim.
 " Think of it as a wrapper on top of git, you can do most if not all from git
 " within vim. The merge tool is easy to use.
 Plug 'tpope/vim-fugitive'
@@ -240,7 +237,7 @@ endfunction
 
 " Viewing Images
 " ================
-" opens common img formats with default image viewer (linux only)
+" Opens common img formats with default image viewer (linux only)
 autocmd BufEnter *.png,*.jpg,*gif exec "!xdg-open ".expand("%") | :bw
 
 " Graphical config
@@ -295,6 +292,8 @@ highlight! ALEWarning ctermbg=NONE cterm=underline guifg=yellow gui=underline
 
 " Vimwiki Config
 " ================
+" Defining where vimwiki should look for wiki files. It is possible to define 
+" another wiki path that points to another separate wiki. Look to 
 let wiki_1 = {}
 let wiki_1.path = '~/vimwiki'
 let wiki_1.index = 'index'
@@ -302,10 +301,10 @@ let g:vimwiki_list = [{'path': '~/vimwiki',
           \ 'template_path': '~/vimwiki_html/templates',
           \ 'template_default': 'default',
           \ 'template_ext': '.html'}]
-" make vimwiki look clean but having no extraneous information like numberline
+" Make vimwiki look clean but having no extraneous information like numberline
 " or folds
 autocmd BufNewFile, BufRead *.wiki setlocal nonu nornu nofoldenable
-" fold based on wiki syntax
+" Fold based on wiki syntax
 let g:vimwiki_folding = 'syntax'
 
 " Startify Config
@@ -332,7 +331,7 @@ let g:startify_custom_header =
 
 " Abbreviations
 " ================
-" useful for when you mistype and accidentally capitalize the first character.
+" Useful for when you mistype and accidentally capitalize the first character.
 ca vsf vert sf
 ca W w
 ca Cd cd
@@ -371,7 +370,7 @@ let NERDTreeShowHidden=1
 
 " TEXTMANIP Mappings
 " ================
-" reminder: xmap = visual mode mapping and nmap = normal mode mapping.
+" Reminder: xmap = visual mode mapping and nmap = normal mode mapping.
 let g:textmanip_enable_mappings = 1
 xmap <Space>d <Plug>(textmanip-duplicate-down)
 nmap <Space>d <Plug>(textmanip-duplicate-down)
@@ -381,7 +380,7 @@ xmap <C-j> <Plug>(textmanip-move-down)
 xmap <C-k> <Plug>(textmanip-move-up)
 xmap <C-h> <Plug>(textmanip-move-left)
 xmap <C-l> <Plug>(textmanip-move-right)
-" toggle insert/replace with <F9>
+" Toggle insert/replace with <F9>
 nmap <F9> <Plug>(textmanip-toggle-mode)
 xmap <F9> <Plug>(textmanip-toggle-mode)
 
@@ -398,7 +397,7 @@ nnoremap S :%s//g<Left><Left>
 
 " Vim airline config
 " ================
-" disable last line of vim screen from showing -- insert --
+" Disable last line of vim screen from showing '-- insert --'
 set noshowmode
 
 if !exists('g:airline_symbols')
