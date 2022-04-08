@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>vimrc.vim</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>vimrc.vim</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-1">&#x00a7;</a>
+              </div>
+              <p>======================================================</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-2">&#x00a7;</a>
+              </div>
+              <p>Author:        Shaedil D.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-3">&#x00a7;</a>
+              </div>
+              <p>Maintainer:    Shaedil D.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-4">&#x00a7;</a>
+              </div>
+              <p>Website Link:  <a href="https://github.com/Shaedil/vim-config">https://github.com/Shaedil/vim-config</a></p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-5">&#x00a7;</a>
+              </div>
+              <p>Description:   My personal .vimrc used for TUI and GUI Vim/NVim</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-6">&#x00a7;</a>
+              </div>
+              <p>Last Modified: 04/07/22</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-7">&#x00a7;</a>
+              </div>
+              <p>======================================================</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-8">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-9">&#x00a7;</a>
+              </div>
+              <h1 id="vim-plugins-section">VIM PLUGINS SECTION</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-10">&#x00a7;</a>
+              </div>
+              <p>These following plugins are extremely useful and used on a day to day basis.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">call</span> plug#begin(<span class="hljs-string">&#x27;~/.vim/plugged&#x27;</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-11">&#x00a7;</a>
+              </div>
+              <p>vim-plug is the best way to manage plugins for vim, it uses git’s command
+tooling to install, update and remove plugins from within vim itself.
+Pathogen sucks now, use vim-plug instead. Hell, even Bram Moolenar uses
+vim-plug.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;junegunn/vim-plug&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-12">&#x00a7;</a>
+              </div>
+              <p>vim visual star search is very useful for working with csv files where you
+want to search for multi-line terms in a file. This is something I’ve caught
+myself mistakenly doing in the past before I had this plugin and it is
+something that is intuitive to me.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;bronson/vim-visual-star-search&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-13">&#x00a7;</a>
+              </div>
+              <p>vim-commentary is the best way to comment code in vim. You only need to know
+5 keybinds to effectively use this plugin</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;tpope/vim-commentary&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-14">&#x00a7;</a>
+              </div>
+              <p>vim-textmanip is a plugin I find myself using time and time again. It allows
+you to move or copy lines of text up or down or shifted left or right. Use
+my mappings, becaus they are easier to memorize understand</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;t9md/vim-textmanip&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-15">&#x00a7;</a>
+              </div>
+              <p>vim-gutentags. proper tag usage for vim, this plugin takes care of all the
+manual labor of creating and updating tag files in your project directory
+automatically. You will need ctags installed. I got mine from sourceforge.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;ludovicchabant/vim-gutentags&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-16">&#x00a7;</a>
+              </div>
+              <p>autopairs is self explanatory, they are useful in order to prevent those
+moments where you are working with javascript or lisp and you forget an
+ending parenthesis.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;jiangmiao/auto-pairs&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-17">&#x00a7;</a>
+              </div>
+              <p>ALE has a well deserved seat in this config file because it does so many
+useful things while still remaining one of the lighter linters available for
+vim. While I have not yet used its quick fix features, I can say that the
+linting features such as in-line linting errors, and built in parsers for
+linting scripts is well thought of.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;dense-analysis/ale&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-18">&#x00a7;</a>
+              </div>
+              <p>vim git integration. It allows you to add, commit and push from within vim.
+Think of it as a wrapper on top of git, you can do most if not all from git
+within vim. The merge tool is easy to use.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;tpope/vim-fugitive&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-19">&#x00a7;</a>
+              </div>
+              <h1 id="aesthetics--eye-candy">Aesthetics / eye candy</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-20">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-20">&#x00a7;</a>
+              </div>
+              <p>Polyglot just has more syntax highlighting rule files for less popular
+syntax and filetypes. It does not slow down vim at all as you may suspect.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;sheerun/vim-polyglot&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-21">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-21">&#x00a7;</a>
+              </div>
+              <p>Highlights yanked text; extremely useful for knowing what and if you copied
+text within vim.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;machakann/vim-highlightedyank&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-22">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-22">&#x00a7;</a>
+              </div>
+              <p>Highlights html color names, hex, rgb, etc; useful for dealing with css</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;RRethy/vim-hexokinase&#x27;</span>, {<span class="hljs-string">&#x27;do&#x27;</span>: <span class="hljs-string">&#x27;make hexokinase&#x27;</span>}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-23">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-23">&#x00a7;</a>
+              </div>
+              <p>Nerdtree is a file explorer/tree, most similar to vscode’s file
+explorer/tree. debatably fast and easy to use. Although Netrw does exist by
+default. i.e. do :e . and you’ll get the same thing as nerdtree.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;scrooloose/nerdtree&#x27;</span>, { <span class="hljs-string">&#x27;on&#x27;</span>: <span class="hljs-string">&#x27;NERDTreeToggle&#x27;</span> }</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-24">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-24">&#x00a7;</a>
+              </div>
+              <p>A better looking statusline for mostly aesthetics but sometimes useful for
+editing. Knowing if you are in insert mode or any other plugin functionality
+will work alongside this plugin to deliver information easily to the user.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;vim-airline/vim-airline&#x27;</span>
+Plug <span class="hljs-string">&#x27;vim-airline/vim-airline-themes&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-25">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-25">&#x00a7;</a>
+              </div>
+              <p>Similar to most heavy-duty IDE startup pages, you can select multiple files
+to open in various configurations. You can create, read, update, delete
+vim sessions and you can open MRUs and bookmarked files. It also looks nice</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;mhinz/vim-startify&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-26">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-26">&#x00a7;</a>
+              </div>
+              <p>Self explanatory, useful for journaling or writing down ideas or project
+managment.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;vimwiki/vimwiki&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-27">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-27">&#x00a7;</a>
+              </div>
+              <p>For nvim only plugins</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">if</span> <span class="hljs-built_in">has</span>(<span class="hljs-string">&quot;nvim&quot;</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-28">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-28">&#x00a7;</a>
+              </div>
+              <p>My favorite colorscheme</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Plug <span class="hljs-string">&#x27;glepnir/zephyr-nvim&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-29">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-29">&#x00a7;</a>
+              </div>
+              <p>Treesitter is such a pain to set up, but it gives you AST like
+syntax highlighting, which goes well with my favorite colorscheme</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    Plug <span class="hljs-string">&#x27;nvim-treesitter/nvim-treesitter&#x27;</span>, {<span class="hljs-string">&#x27;do&#x27;</span>: <span class="hljs-string">&#x27;:TSUpdate&#x27;</span>}
+<span class="hljs-keyword">endif</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-30">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-30">&#x00a7;</a>
+              </div>
+              <p>Mandatory to be the last plugin to load, this plugin is useful for displaying
+quick information in other various vim plugins and status bars using
+specific characters in a specific formatted font that is compatible with
+vim-devicons.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>Plug <span class="hljs-string">&#x27;ryanoasis/vim-devicons&#x27;</span>
+<span class="hljs-keyword">call</span> plug#end()</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-31">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-31">&#x00a7;</a>
+              </div>
+              <p>Required lua config for nvim-treesitter</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">lua</span> &lt;&lt; EOF
+require<span class="hljs-string">&#x27;nvim-treesitter.configs&#x27;</span>.setup {
+    ensure_installed = <span class="hljs-string">&quot;maintained&quot;</span>,
+    <span class="hljs-keyword">highlight</span> = {
+        enable = true,
+    },
+}
+EOF</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-32">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-32">&#x00a7;</a>
+              </div>
+              <h1 id="default-vim-settings">Default vim settings</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-33">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-33">&#x00a7;</a>
+              </div>
+              <p>Loads autocommands in plugins which sources filetype plugins associated to
+current filetype. Required to use plugins.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">filetype</span> plugin <span class="hljs-keyword">on</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-34">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-34">&#x00a7;</a>
+              </div>
+              <p>Allows using :highlight commands to overrule vim default syntax
+highlighting. Required to use non-default colorschemes.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">syntax</span> <span class="hljs-keyword">on</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-35">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-35">&#x00a7;</a>
+              </div>
+              <p>Disables vi compatibility mode because we want vim not vi.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> nocompatible</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-36">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-36">&#x00a7;</a>
+              </div>
+              <p>Recommended character encoding for vim, reduces encoding conversion overhead</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> encoding=utf8</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-37">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-37">&#x00a7;</a>
+              </div>
+              <p>Show last used command in last line of vim screen</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> showcmd</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-38">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-38">&#x00a7;</a>
+              </div>
+              <p>Splits vim windows below and to the right of the current window.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> splitbelow
+<span class="hljs-keyword">set</span> splitright</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-39">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-39">&#x00a7;</a>
+              </div>
+              <p>Makes vim search for tag files named ‘tags’</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> <span class="hljs-keyword">tags</span>=<span class="hljs-keyword">tags</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-40">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-40">&#x00a7;</a>
+              </div>
+              <p>Disables annoying bell sound and replaces it with a visual flashing 
+(only on linux terminals)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> visualbell</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-41">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-41">&#x00a7;</a>
+              </div>
+              <p>Highlight first 1000 characters in a column per line. Helps with loading
+files.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> synmaxcol=<span class="hljs-number">1000</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-42">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-42">&#x00a7;</a>
+              </div>
+              <p>automatically change directory to file location (kinda annoying
+sometimes, but nice to have when dealing with a project)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> autochdir</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-43">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-43">&#x00a7;</a>
+              </div>
+              <p>Don’t show ‘match 1 of 2’ or ‘The only match’ messages</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> shortmess+=<span class="hljs-keyword">c</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-44">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-44">&#x00a7;</a>
+              </div>
+              <p>Sets title of program to: ‘[filename] [+] (cwd) - NVIM’</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> title</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-45">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-45">&#x00a7;</a>
+              </div>
+              <p>Enables number line and cursorline. To taste</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> relativenumber
+<span class="hljs-keyword">set</span> <span class="hljs-keyword">number</span>
+<span class="hljs-keyword">set</span> cursorline</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-46">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-46">&#x00a7;</a>
+              </div>
+              <p>Enable full mouse support for copying or selecting text.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> mouse=<span class="hljs-keyword">a</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-47">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-47">&#x00a7;</a>
+              </div>
+              <p>Correct MacOS backspace key</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> backspace=<span class="hljs-built_in">indent</span>,eol,start</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-48">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-48">&#x00a7;</a>
+              </div>
+              <p>Fold settings. ‘{{{,}}}’ is the default fold marker. Don’t render deeply
+nested folds and set fold levels to 0 when working with multiple buffers.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> foldenable
+<span class="hljs-keyword">set</span> foldmethod=marker
+<span class="hljs-keyword">set</span> foldnestmax=<span class="hljs-number">10</span>
+<span class="hljs-keyword">set</span> foldlevelstart=<span class="hljs-number">0</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-49">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-49">&#x00a7;</a>
+              </div>
+              <p>Highlight searches and search while typing out the full search</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> hlsearch
+<span class="hljs-keyword">set</span> incsearch</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-50">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-50">&#x00a7;</a>
+              </div>
+              <p>Set Paste mode keybind, Paste mode is ful for using vim in a terminal and
+you need to copy text from one window in the terminal to the other.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> pastetoggle=<span class="hljs-symbol">&lt;F2&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-51">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-51">&#x00a7;</a>
+              </div>
+              <p>Indentation rules. always keep tabstop = 8 spaces, shift text 4 spaces,
+convert tabs to spaces, minimum tab size = 4 spaces (useful formatting
+when printing files), auto copy indentation when using the “o” or “O”
+command, smarttab deletes a shiftwidth worth of space after a tab inserts
+blanks according to tabstop or softtabstop</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> tabstop=<span class="hljs-number">8</span>
+<span class="hljs-keyword">set</span> <span class="hljs-built_in">shiftwidth</span>=<span class="hljs-number">4</span>
+<span class="hljs-keyword">set</span> expandtab
+<span class="hljs-keyword">set</span> softtabstop=<span class="hljs-number">4</span>
+<span class="hljs-keyword">set</span> autoindent
+<span class="hljs-keyword">set</span> smarttab</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-52">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-52">&#x00a7;</a>
+              </div>
+              <h1 id="autocompletion">Autocompletion</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-53">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-53">&#x00a7;</a>
+              </div>
+              <p>Every directory gets searched when using ‘gf’ command</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> path=.,**</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-54">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-54">&#x00a7;</a>
+              </div>
+              <p>Enables command line completion</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> wildmenu</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-55">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-55">&#x00a7;</a>
+              </div>
+              <p>enables default code completion, completes based on syntax</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> omnifunc=syntaxcomplete#Complete</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-56">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-56">&#x00a7;</a>
+              </div>
+              <p>shows extra info about currently selected completion in preview window</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> completeopt+=preview</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-57">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-57">&#x00a7;</a>
+              </div>
+              <p>Order the completion suggestions by longest common string and full match.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> wildmode=longes<span class="hljs-variable">t:full</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-58">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-58">&#x00a7;</a>
+              </div>
+              <p>character to press when starting completion in command line for macros only.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> wildcharm=<span class="hljs-symbol">&lt;C-b&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-59">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-59">&#x00a7;</a>
+              </div>
+              <p>ignore these files when showing completion suggestions.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> wildignore=*.swip,*.bak
+<span class="hljs-keyword">set</span> wildignore+=*.pyc,*.class,*.sln,*.Master,*.csproj,*.csproj.user
+<span class="hljs-keyword">set</span> wildignore+=*.cache,*.dll,*.pdb,*.<span class="hljs-built_in">min</span>.*
+<span class="hljs-keyword">set</span> wildignore+=*/.git/**/*,*/.hg/**/*,*/.svn/**/*
+<span class="hljs-keyword">set</span> wildignore+=<span class="hljs-keyword">tags</span>
+<span class="hljs-keyword">set</span> wildignore+=*.tar.*</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-60">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-60">&#x00a7;</a>
+              </div>
+              <h1 id="custom-funcs-cmds-and-autocmds">Custom Funcs, Cmds and AutoCmds</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-61">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-61">&#x00a7;</a>
+              </div>
+              <p>Remove all buffers except current buffer</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>command! BufOnly silent! <span class="hljs-keyword">execute</span> <span class="hljs-string">&quot;%bd|e#|bd#&quot;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-62">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-62">&#x00a7;</a>
+              </div>
+              <h1 id="togglecursors">ToggleCursors</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-63">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-63">&#x00a7;</a>
+              </div>
+              <p>Press F3 to find your cursor position</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;F3&gt;</span> :<span class="hljs-keyword">call</span> ToggleCursors()<span class="hljs-symbol">&lt;CR&gt;</span>
+fun! ToggleCursors()
+    <span class="hljs-keyword">if</span> &amp;cursorline &amp;&amp; &amp;cursorcolumn
+        <span class="hljs-keyword">set</span> nocursorcolumn
+        <span class="hljs-keyword">set</span> nocursorline
+    <span class="hljs-keyword">else</span>
+        <span class="hljs-keyword">set</span> cursorcolumn
+        <span class="hljs-keyword">set</span> cursorline
+    <span class="hljs-keyword">endif</span>
+endfun</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-64">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-64">&#x00a7;</a>
+              </div>
+              <h1 id="vullscreen">Vullscreen</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-65">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-65">&#x00a7;</a>
+              </div>
+              <p>Toggle gui options bar at the top of vim window, default is off</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">nnoremap</span> <span class="hljs-symbol">&lt;F11&gt;</span> :<span class="hljs-keyword">call</span> VullScreen()<span class="hljs-symbol">&lt;cr&gt;</span>
+fun! VullScreen()
+    <span class="hljs-keyword">if</span> &amp;<span class="hljs-keyword">go</span>=~#<span class="hljs-string">&#x27;m&#x27;</span>
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>-=<span class="hljs-keyword">m</span>
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>-=T
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>-=r
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>-=R
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>-=<span class="hljs-keyword">l</span>
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>-=L
+    <span class="hljs-keyword">else</span>
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>+=<span class="hljs-keyword">m</span>
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>+=T
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>+=r
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>+=R
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>+=<span class="hljs-keyword">l</span>
+        <span class="hljs-keyword">set</span> <span class="hljs-keyword">go</span>+=L
+    <span class="hljs-keyword">endif</span>
+endfun</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-66">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-66">&#x00a7;</a>
+              </div>
+              <p>Press F4 to highlight spelling errors in the english language.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">nnoremap</span> <span class="hljs-symbol">&lt;F4&gt;</span> :<span class="hljs-keyword">setlocal</span> spell! spelllang=en_us<span class="hljs-symbol">&lt;cr&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-67">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-67">&#x00a7;</a>
+              </div>
+              <p>Use K to show documentation in another window/buffer</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">function!</span> <span class="hljs-title">s</span>:show_documentation<span class="hljs-params">()</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">index</span>([<span class="hljs-string">&#x27;vim&#x27;</span>,<span class="hljs-string">&#x27;help&#x27;</span>], &amp;<span class="hljs-keyword">filetype</span>) &gt;= <span class="hljs-number">0</span>)
+    <span class="hljs-keyword">execute</span> <span class="hljs-string">&#x27;h &#x27;</span>.<span class="hljs-built_in">expand</span>(<span class="hljs-string">&#x27;&lt;cword&gt;&#x27;</span>)
+  <span class="hljs-keyword">else</span>
+    <span class="hljs-keyword">call</span> CocAction(<span class="hljs-string">&#x27;doHover&#x27;</span>)
+  <span class="hljs-keyword">endif</span>
+<span class="hljs-keyword">endfunction</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-68">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-68">&#x00a7;</a>
+              </div>
+              <h1 id="viewing-images">Viewing Images</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-69">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-69">&#x00a7;</a>
+              </div>
+              <p>opens common img formats with default image viewer (linux only)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">autocmd</span> BufEnter *.png,*.jpg,*gif exec <span class="hljs-string">&quot;!xdg-open &quot;</span>.<span class="hljs-built_in">expand</span>(<span class="hljs-string">&quot;%&quot;</span>) | :<span class="hljs-keyword">bw</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-70">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-70">&#x00a7;</a>
+              </div>
+              <h1 id="graphical-config">Graphical config</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-71">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-71">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-72">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-72">&#x00a7;</a>
+              </div>
+              <h1 id="font-and-colorscheme">Font and Colorscheme</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-73">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-73">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> guifont=DroidSansMono\ NF:h11</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-74">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-74">&#x00a7;</a>
+              </div>
+              <p>Use more highlighting options present in colorscheme files
+(e.g. guifg, guibg)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> termguicolors
+<span class="hljs-keyword">colorscheme</span> zephyr
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_theme</span>=<span class="hljs-string">&#x27;zenburn&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-75">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-75">&#x00a7;</a>
+              </div>
+              <p>Python lines of code should be under 80 characters, this sets a visual
+marker to help you prevent going past this limit.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">autocmd</span> FileType <span class="hljs-keyword">python</span> <span class="hljs-keyword">set</span> colorcolumn=<span class="hljs-number">80</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-76">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-76">&#x00a7;</a>
+              </div>
+              <h1 id="airline-config">Airline Config</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-77">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-77">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-78">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-78">&#x00a7;</a>
+              </div>
+              <p>Aesthetics purposes only, looks like powerline</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_powerline_fonts</span> = <span class="hljs-number">1</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline</span>#extensions#tabline#enabled = <span class="hljs-number">1</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline</span>#extensions#tabline#formatter = <span class="hljs-string">&#x27;unique_tail&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline</span>#extensions#ale#checking_symbol = <span class="hljs-string">&quot; \uf252 &quot;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline</span>#extensions#coc#error_symbol = <span class="hljs-string">&#x27; ⓧ &#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline</span>#extensions#coc#warning_symbol = <span class="hljs-string">&#x27; ⚠️&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-79">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-79">&#x00a7;</a>
+              </div>
+              <h1 id="nerdtree-config-self-explanatory">NERDTree config, self explanatory</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-80">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-80">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> NERDTreeHighlightCursorline = <span class="hljs-number">0</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-81">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-81">&#x00a7;</a>
+              </div>
+              <h1 id="ale-config">Ale Config</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-82">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-82">&#x00a7;</a>
+              </div>
+              <p>Aesthetics only, symbols appear left of numberline</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_sign_error</span> = <span class="hljs-string">&quot;✘&quot;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_sign_warning</span> = <span class="hljs-string">&quot;&quot;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_lint_on_enter</span> = <span class="hljs-number">1</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_fix_on_save</span> = <span class="hljs-number">1</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_floating_window_border</span> = [<span class="hljs-string">&#x27;│&#x27;</span>, <span class="hljs-string">&#x27;─&#x27;</span>, <span class="hljs-string">&#x27;╭&#x27;</span>, <span class="hljs-string">&#x27;╮&#x27;</span>, <span class="hljs-string">&#x27;╯&#x27;</span>, <span class="hljs-string">&#x27;╰&#x27;</span>]</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-83">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-83">&#x00a7;</a>
+              </div>
+              <p>If these linters are installed, ale will use them to find errors.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_linters</span> = {<span class="hljs-string">&#x27;python&#x27;</span>: [<span class="hljs-string">&#x27;pylint&#x27;</span>, <span class="hljs-string">&#x27;flake8&#x27;</span>, <span class="hljs-string">&#x27;pycodestyle&#x27;</span>], <span class="hljs-string">&#x27;vimscript&#x27;</span>: [<span class="hljs-string">&#x27;vint&#x27;</span>]}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-84">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-84">&#x00a7;</a>
+              </div>
+              <p>These symbols are found in hovered lines or the last line of vim screen</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_echo_msg_error</span> = <span class="hljs-string">&#x27;E&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_echo_msg_warning</span> = <span class="hljs-string">&#x27;W&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-85">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-85">&#x00a7;</a>
+              </div>
+              <p>Seen on hover of line with error</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:ale_echo_msg_format</span> = <span class="hljs-string">&#x27;[%linter%] %code%: %s&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-86">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-86">&#x00a7;</a>
+              </div>
+              <p>Highlighting symbols for readability</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>highlight! ALEErrorSign ctermbg=NONE ctermfg=<span class="hljs-keyword">red</span> guibg=NONE guifg=<span class="hljs-keyword">red</span>
+highlight! ALEWarningSign ctermbg=NONE ctermfg=yellow guibg=NONE guifg=yellow
+highlight! ALEError ctermbg=NONE cterm=underline guifg=<span class="hljs-keyword">red</span> <span class="hljs-keyword">gui</span>=underline
+highlight! ALEWarning ctermbg=NONE cterm=underline guifg=yellow <span class="hljs-keyword">gui</span>=underline</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-87">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-87">&#x00a7;</a>
+              </div>
+              <h1 id="vimwiki-config">Vimwiki Config</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-88">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-88">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> wiki_1 = {}
+<span class="hljs-keyword">let</span> wiki_1.path = <span class="hljs-string">&#x27;~/vimwiki&#x27;</span>
+<span class="hljs-keyword">let</span> wiki_1.<span class="hljs-built_in">index</span> = <span class="hljs-string">&#x27;index&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:vimwiki_list</span> = [{<span class="hljs-string">&#x27;path&#x27;</span>: <span class="hljs-string">&#x27;~/vimwiki&#x27;</span>,
+          \ <span class="hljs-string">&#x27;template_path&#x27;</span>: <span class="hljs-string">&#x27;~/vimwiki_html/templates&#x27;</span>,
+          \ <span class="hljs-string">&#x27;template_default&#x27;</span>: <span class="hljs-string">&#x27;default&#x27;</span>,
+          \ <span class="hljs-string">&#x27;template_ext&#x27;</span>: <span class="hljs-string">&#x27;.html&#x27;</span>}]</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-89">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-89">&#x00a7;</a>
+              </div>
+              <p>make vimwiki look clean but having no extraneous information like numberline
+or folds</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">autocmd</span> BufNewFile, BufRead *.wiki <span class="hljs-keyword">setlocal</span> nonu nornu nofoldenable</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-90">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-90">&#x00a7;</a>
+              </div>
+              <p>fold based on wiki syntax</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:vimwiki_folding</span> = <span class="hljs-string">&#x27;syntax&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-91">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-91">&#x00a7;</a>
+              </div>
+              <h1 id="startify-config">Startify Config</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-92">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-92">&#x00a7;</a>
+              </div>
+              <p>Self explanatory</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:startify_bookmarks</span> = [
+   \ { <span class="hljs-string">&#x27;c&#x27;</span>: <span class="hljs-string">&#x27;~/.vimrc&#x27;</span> },
+   \ ]
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:startify_commands</span> = [
+   \ { <span class="hljs-string">&#x27;d&#x27;</span>: [<span class="hljs-string">&#x27;Vimwiki&#x27;</span>, <span class="hljs-string">&#x27;:VimwikiIndex&#x27;</span>] },
+   \ ]
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:startify_lists</span> = [
+   \ { <span class="hljs-string">&#x27;type&#x27;</span>: <span class="hljs-string">&#x27;files&#x27;</span>,     <span class="hljs-string">&#x27;header&#x27;</span>: [<span class="hljs-string">&#x27;   MRU&#x27;</span>]            },
+   \ { <span class="hljs-string">&#x27;type&#x27;</span>: <span class="hljs-string">&#x27;sessions&#x27;</span>,  <span class="hljs-string">&#x27;header&#x27;</span>: [<span class="hljs-string">&#x27;   Sessions&#x27;</span>]       },
+   \ { <span class="hljs-string">&#x27;type&#x27;</span>: <span class="hljs-string">&#x27;bookmarks&#x27;</span>, <span class="hljs-string">&#x27;header&#x27;</span>: [<span class="hljs-string">&#x27;   Bookmarks&#x27;</span>]      },
+   \ { <span class="hljs-string">&#x27;type&#x27;</span>: <span class="hljs-string">&#x27;commands&#x27;</span>,  <span class="hljs-string">&#x27;header&#x27;</span>: [<span class="hljs-string">&#x27;   Commands&#x27;</span>]       },
+   \ ]</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-93">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-93">&#x00a7;</a>
+              </div>
+              <p>Uses a bank of programming-related quotes, aesthetics only.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:startify_custom_header</span> =
+   \ startify#pad(startify#fortune#cowsay(<span class="hljs-string">&#x27;&#x27;</span>, <span class="hljs-string">&#x27;═&#x27;</span>,<span class="hljs-string">&#x27;║&#x27;</span>,<span class="hljs-string">&#x27;╔&#x27;</span>,<span class="hljs-string">&#x27;╗&#x27;</span>,<span class="hljs-string">&#x27;╝&#x27;</span>,<span class="hljs-string">&#x27;╚&#x27;</span>))</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-94">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-94">&#x00a7;</a>
+              </div>
+              <h1 id="keybindings">Keybindings</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-95">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-95">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-96">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-96">&#x00a7;</a>
+              </div>
+              <h1 id="abbreviations">Abbreviations</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-97">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-97">&#x00a7;</a>
+              </div>
+              <p>useful for when you mistype and accidentally capitalize the first character.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">ca</span> vsf <span class="hljs-keyword">vert</span> <span class="hljs-keyword">sf</span>
+<span class="hljs-keyword">ca</span> W <span class="hljs-keyword">w</span>
+<span class="hljs-keyword">ca</span> Cd <span class="hljs-keyword">cd</span>
+<span class="hljs-keyword">ca</span> Wq <span class="hljs-keyword">wq</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-98">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-98">&#x00a7;</a>
+              </div>
+              <h1 id="navigating-split-windows">Navigating split windows</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-99">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-99">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">noremap</span> <span class="hljs-symbol">&lt;C-J&gt;</span> <span class="hljs-symbol">&lt;C-W&gt;</span><span class="hljs-symbol">&lt;C-J&gt;</span>
+<span class="hljs-keyword">noremap</span> <span class="hljs-symbol">&lt;C-K&gt;</span> <span class="hljs-symbol">&lt;C-W&gt;</span><span class="hljs-symbol">&lt;C-K&gt;</span>
+<span class="hljs-keyword">noremap</span> <span class="hljs-symbol">&lt;C-L&gt;</span> <span class="hljs-symbol">&lt;C-W&gt;</span><span class="hljs-symbol">&lt;C-L&gt;</span>
+<span class="hljs-keyword">noremap</span> <span class="hljs-symbol">&lt;C-H&gt;</span> <span class="hljs-symbol">&lt;C-W&gt;</span><span class="hljs-symbol">&lt;C-H&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-100">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-100">&#x00a7;</a>
+              </div>
+              <p>For the built-in vim terminal, see below</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>tnoremap <span class="hljs-symbol">&lt;C-w&gt;</span>h &lt;C-\&gt;<span class="hljs-symbol">&lt;C-n&gt;</span><span class="hljs-symbol">&lt;C-w&gt;</span>h
+tnoremap <span class="hljs-symbol">&lt;C-w&gt;</span><span class="hljs-keyword">j</span> &lt;C-\&gt;<span class="hljs-symbol">&lt;C-n&gt;</span><span class="hljs-symbol">&lt;C-w&gt;</span><span class="hljs-keyword">j</span>
+tnoremap <span class="hljs-symbol">&lt;C-w&gt;</span><span class="hljs-keyword">k</span> &lt;C-\&gt;<span class="hljs-symbol">&lt;C-n&gt;</span><span class="hljs-symbol">&lt;C-w&gt;</span><span class="hljs-keyword">k</span>
+tnoremap <span class="hljs-symbol">&lt;C-w&gt;</span><span class="hljs-keyword">l</span> &lt;C-\&gt;<span class="hljs-symbol">&lt;C-n&gt;</span><span class="hljs-symbol">&lt;C-w&gt;</span><span class="hljs-keyword">l</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-101">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-101">&#x00a7;</a>
+              </div>
+              <h1 id="navigating-tabs">Navigating Tabs</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-102">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-102">&#x00a7;</a>
+              </div>
+              <p>Manage tabs easier with these</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">nnoremap</span> gt :<span class="hljs-keyword">tabnext</span><span class="hljs-symbol">&lt;CR&gt;</span>
+<span class="hljs-keyword">nnoremap</span> <span class="hljs-keyword">th</span> :tabprev<span class="hljs-symbol">&lt;CR&gt;</span>
+<span class="hljs-keyword">nnoremap</span> <span class="hljs-keyword">tn</span> :<span class="hljs-keyword">tabnew</span><span class="hljs-symbol">&lt;CR&gt;</span>
+<span class="hljs-keyword">nnoremap</span> <span class="hljs-keyword">tc</span> :<span class="hljs-keyword">tabclose</span><span class="hljs-symbol">&lt;CR&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-103">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-103">&#x00a7;</a>
+              </div>
+              <h1 id="buffer-management">Buffer management</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-104">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-104">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">nnoremap</span> gb :<span class="hljs-keyword">ls</span><span class="hljs-symbol">&lt;Cr&gt;</span>:<span class="hljs-keyword">b</span><span class="hljs-symbol">&lt;Space&gt;</span>
+<span class="hljs-keyword">map</span> <span class="hljs-symbol">&lt;C-Right&gt;</span> :<span class="hljs-keyword">bnext</span><span class="hljs-symbol">&lt;CR&gt;</span>
+<span class="hljs-keyword">map</span> <span class="hljs-symbol">&lt;C-Left&gt;</span> :bprev<span class="hljs-symbol">&lt;CR&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-105">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-105">&#x00a7;</a>
+              </div>
+              <h1 id="nerdtree-mapping">NERDTree mapping</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-106">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-106">&#x00a7;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">noremap</span> <span class="hljs-symbol">&lt;C-N&gt;</span> :NERDTreeToggle<span class="hljs-symbol">&lt;CR&gt;</span>
+<span class="hljs-keyword">let</span> NERDTreeShowHidden=<span class="hljs-number">1</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-107">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-107">&#x00a7;</a>
+              </div>
+              <h1 id="textmanip-mappings">TEXTMANIP Mappings</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-108">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-108">&#x00a7;</a>
+              </div>
+              <p>reminder: xmap = visual mode mapping and nmap = normal mode mapping.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:textmanip_enable_mappings</span> = <span class="hljs-number">1</span>
+<span class="hljs-keyword">xmap</span> <span class="hljs-symbol">&lt;Space&gt;</span>d <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-duplicate-down)
+<span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;Space&gt;</span>d <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-duplicate-down)
+<span class="hljs-keyword">xmap</span> <span class="hljs-symbol">&lt;Space&gt;</span>D <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-duplicate-<span class="hljs-keyword">up</span>)
+<span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;Space&gt;</span>D <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-duplicate-<span class="hljs-keyword">up</span>)
+<span class="hljs-keyword">xmap</span> <span class="hljs-symbol">&lt;C-j&gt;</span> <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-<span class="hljs-keyword">move</span>-down)
+<span class="hljs-keyword">xmap</span> <span class="hljs-symbol">&lt;C-k&gt;</span> <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-<span class="hljs-keyword">move</span>-<span class="hljs-keyword">up</span>)
+<span class="hljs-keyword">xmap</span> <span class="hljs-symbol">&lt;C-h&gt;</span> <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-<span class="hljs-keyword">move</span>-<span class="hljs-keyword">left</span>)
+<span class="hljs-keyword">xmap</span> <span class="hljs-symbol">&lt;C-l&gt;</span> <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-<span class="hljs-keyword">move</span>-<span class="hljs-keyword">right</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-109">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-109">&#x00a7;</a>
+              </div>
+              <p>toggle insert/replace with <F9></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">nmap</span> <span class="hljs-symbol">&lt;F9&gt;</span> <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-toggle-<span class="hljs-keyword">mode</span>)
+<span class="hljs-keyword">xmap</span> <span class="hljs-symbol">&lt;F9&gt;</span> <span class="hljs-symbol">&lt;Plug&gt;</span>(textmanip-toggle-<span class="hljs-keyword">mode</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-110">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-110">&#x00a7;</a>
+              </div>
+              <h1 id="git-conflict-management">Git conflict management</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-111">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-111">&#x00a7;</a>
+              </div>
+              <p>Fugitive Conflict Resolution:
+<a href="https://medium.com/prodopsio/solving-git-merge-conflicts-with-vim-c8a8617e3633">https://medium.com/prodopsio/solving-git-merge-conflicts-with-vim-c8a8617e3633</a></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">nnoremap</span> <span class="hljs-symbol">&lt;leader&gt;</span>gd :Gvdiff<span class="hljs-symbol">&lt;CR&gt;</span>
+<span class="hljs-keyword">nnoremap</span> gdh :<span class="hljs-keyword">diffget</span> //<span class="hljs-number">2</span><span class="hljs-symbol">&lt;CR&gt;</span>
+<span class="hljs-keyword">nnoremap</span> gdl :<span class="hljs-keyword">diffget</span> //<span class="hljs-number">3</span><span class="hljs-symbol">&lt;CR&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-112">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-112">&#x00a7;</a>
+              </div>
+              <p>‘Replace all’ is aliased to S</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">nnoremap</span> S :%s//g<span class="hljs-symbol">&lt;Left&gt;</span><span class="hljs-symbol">&lt;Left&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-113">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-113">&#x00a7;</a>
+              </div>
+              <h1 id="vim-airline-config">Vim airline config</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-114">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-114">&#x00a7;</a>
+              </div>
+              <p>disable last line of vim screen from showing – insert –</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">set</span> noshowmode
+
+<span class="hljs-keyword">if</span> !exists(<span class="hljs-string">&#x27;g:airline_symbols&#x27;</span>)
+    <span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_symbols</span> = {}
+<span class="hljs-keyword">endif</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-115">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-115">&#x00a7;</a>
+              </div>
+              <p>Powerline symbols if using a powerline font</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_left_sep</span> = <span class="hljs-string">&#x27;&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_left_alt_sep</span> = <span class="hljs-string">&#x27;&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_right_sep</span> = <span class="hljs-string">&#x27;&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_right_alt_sep</span> = <span class="hljs-string">&#x27;&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_symbols</span>.branch = <span class="hljs-string">&#x27;&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_symbols</span>.readonly = <span class="hljs-string">&#x27;&#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_symbols</span>.linenr = <span class="hljs-string">&#x27;☰ &#x27;</span>
+<span class="hljs-keyword">let</span> <span class="hljs-variable">g:airline_symbols</span>.maxlinenr = <span class="hljs-string">&#x27;&#x27;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-116">
+            <div class="annotation">
+              
+              <div class="sswrap ">
+                <a class="ss" href="#section-116">&#x00a7;</a>
+              </div>
+              <p>cd home always, just for personal preference</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">cd</span> ~</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
