@@ -2,3 +2,4 @@ node_modules
 tags
 tags.temp
 tags.lock
+src/docs/docco.css
